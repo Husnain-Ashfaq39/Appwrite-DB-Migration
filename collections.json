@@ -1,0 +1,1791 @@
+{
+  "66fbcd5b002c8f6d7df1": {
+    "collection": {
+      "$id": "66fbcd5b002c8f6d7df1",
+      "name": "Users",
+      "$permissions": [
+        "create(\"any\")",
+        "read(\"any\")",
+        "create(\"team:671ca690003781eae833\")",
+        "read(\"team:671ca690003781eae833\")",
+        "update(\"team:671ca690003781eae833\")",
+        "delete(\"team:671ca690003781eae833\")"
+      ],
+      "documentSecurity": false,
+      "attributes": [
+        {
+          "key": "userId",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "role",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "name",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "isWholesaleApproved",
+          "type": "boolean",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "default": null
+        },
+        {
+          "key": "telephone",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 255,
+          "default": null
+        },
+        {
+          "key": "email",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        }
+      ]
+    }
+  },
+  "66fbce8b0019104ab7b5": {
+    "collection": {
+      "$id": "66fbce8b0019104ab7b5",
+      "name": "Products",
+      "$permissions": [
+        "read(\"any\")",
+        "update(\"any\")",
+        "create(\"team:671ca690003781eae833\")",
+        "read(\"team:671ca690003781eae833\")",
+        "update(\"team:671ca690003781eae833\")",
+        "delete(\"team:671ca690003781eae833\")"
+      ],
+      "documentSecurity": false,
+      "attributes": [
+        {
+          "key": "name",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "description",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 5000,
+          "default": null
+        },
+        {
+          "key": "price",
+          "type": "double",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "min": -1.7976931348623157e+308,
+          "max": 1.7976931348623157e+308,
+          "default": null
+        },
+        {
+          "key": "discountPrice",
+          "type": "double",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "min": -1.7976931348623157e+308,
+          "max": 1.7976931348623157e+308,
+          "default": null
+        },
+        {
+          "key": "stockQuantity",
+          "type": "integer",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "min": -9223372036854776000,
+          "max": 9223372036854776000,
+          "default": null
+        },
+        {
+          "key": "categoryId",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "images",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": true,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "tags",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": true,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "isOnSale",
+          "type": "boolean",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "default": null
+        },
+        {
+          "key": "isWholesaleProduct",
+          "type": "boolean",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "default": null
+        },
+        {
+          "key": "barcode",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "taxExclusivePrice",
+          "type": "double",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "min": -1.7976931348623157e+308,
+          "max": 1.7976931348623157e+308,
+          "default": null
+        },
+        {
+          "key": "tax",
+          "type": "double",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "min": -1.7976931348623157e+308,
+          "max": 1.7976931348623157e+308,
+          "default": null
+        },
+        {
+          "key": "bannerLabel",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50,
+          "default": null
+        },
+        {
+          "key": "minimumPurchaseQuantity",
+          "type": "integer",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "min": -9223372036854776000,
+          "max": 9223372036854776000,
+          "default": null
+        },
+        {
+          "key": "lowStockAlert",
+          "type": "integer",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "min": -9223372036854776000,
+          "max": 9223372036854776000,
+          "default": null
+        }
+      ]
+    }
+  },
+  "66fbcf3e001345e8893b": {
+    "collection": {
+      "$id": "66fbcf3e001345e8803b",
+      "name": "Categories",
+      "$permissions": [
+        "create(\"any\")",
+        "read(\"any\")",
+        "update(\"any\")",
+        "create(\"team:671ca690003781eae833\")",
+        "read(\"team:671ca690003781eae833\")",
+        "update(\"team:671ca690003781eae833\")",
+        "delete(\"team:671ca690003781eae833\")"
+      ],
+      "documentSecurity": false,
+      "attributes": [
+        {
+          "key": "name",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "description",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 1000,
+          "default": null
+        },
+        {
+          "key": "image",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": true,
+          "size": 498,
+          "default": null
+        },
+        {
+          "key": "parentCategoryId",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        }
+      ]
+    }
+  },
+  "66fc53ab00017224dee4": {
+    "collection": {
+      "$id": "66fc53ab00017224dee4",
+      "name": "Wishlist",
+      "$permissions": [
+        "create(\"any\")",
+        "read(\"any\")",
+        "update(\"any\")",
+        "delete(\"any\")"
+      ],
+      "documentSecurity": false,
+      "attributes": [
+        {
+          "key": "userId",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "productIds",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": true,
+          "size": 500,
+          "default": null
+        }
+      ]
+    }
+  },
+  "66fe4b48002f9ddceaa5": {
+    "collection": {
+      "$id": "66fe4b48002f9ddceaa5",
+      "name": "WholesaleAccountRequests",
+      "$permissions": [
+        "create(\"team:671ca690003781eae833\")",
+        "read(\"team:671ca690003781eae833\")",
+        "update(\"team:671ca690003781eae833\")",
+        "delete(\"team:671ca690003781eae833\")",
+        "create(\"users\")",
+        "read(\"users\")",
+        "update(\"users\")"
+      ],
+      "documentSecurity": false,
+      "attributes": [
+        {
+          "key": "userId",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "status",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "rejectionReason",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 1000,
+          "default": null
+        },
+        {
+          "key": "firstName",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 255,
+          "default": null
+        },
+        {
+          "key": "lastName",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "address",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 1000,
+          "default": null
+        },
+        {
+          "key": "mobileNumber",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "accountType",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 255,
+          "default": null
+        },
+        {
+          "key": "tradingName",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "tradingAddress",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 1000,
+          "default": null
+        },
+        {
+          "key": "companyRegisteredName",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 1000,
+          "default": null
+        },
+        {
+          "key": "companyRegistrationNumber",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 1000,
+          "default": null
+        },
+        {
+          "key": "positionInBusiness",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 1000,
+          "default": null
+        },
+        {
+          "key": "businessDescription",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 5000,
+          "default": null
+        },
+        {
+          "key": "vatNumber",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "businessType",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "attachments",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": true,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "marketingPreferences",
+          "type": "boolean",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "default": null
+        }
+      ]
+    }
+  },
+  "6706c652000f666e140f": {
+    "collection": {
+      "$id": "6706c652000f666e140f",
+      "name": "contacts",
+      "$permissions": [
+        "create(\"any\")",
+        "read(\"any\")",
+        "update(\"any\")",
+        "create(\"team:671ca690003781eae833\")",
+        "read(\"team:671ca690003781eae833\")",
+        "update(\"team:671ca690003781eae833\")",
+        "delete(\"team:671ca690003781eae833\")"
+      ],
+      "documentSecurity": false,
+      "attributes": [
+        {
+          "key": "name",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "email",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "comment",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 5000,
+          "default": null
+        },
+        {
+          "key": "phone",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "read",
+          "type": "boolean",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "default": null
+        }
+      ]
+    }
+  },
+  "6706f142003927064ec8": {
+    "collection": {
+      "$id": "6706f142003927064ec8",
+      "name": "blogs",
+      "$permissions": [
+        "read(\"any\")",
+        "create(\"team:671ca690003781eae833\")",
+        "read(\"team:671ca690003781eae833\")",
+        "update(\"team:671ca690003781eae833\")",
+        "delete(\"team:671ca690003781eae833\")"
+      ],
+      "documentSecurity": false,
+      "attributes": [
+        {
+          "key": "title",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "author",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "tags",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": true,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "imageUrl",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "publicationDate",
+          "type": "datetime",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "format": "",
+          "default": null
+        },
+        {
+          "key": "views",
+          "type": "integer",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "min": -9223372036854776000,
+          "max": 9223372036854776000,
+          "default": null
+        },
+        {
+          "key": "content",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        }
+      ]
+    }
+  },
+  "670760c60037a5149b81": {
+    "collection": {
+      "$id": "670760c60037a5149b81",
+      "name": "Generalimages",
+      "$permissions": [
+        "create(\"any\")",
+        "read(\"any\")",
+        "update(\"any\")",
+        "create(\"team:671ca690003781eae833\")",
+        "read(\"team:671ca690003781eae833\")",
+        "update(\"team:671ca690003781eae833\")",
+        "delete(\"team:671ca690003781eae833\")"
+      ],
+      "documentSecurity": false,
+      "attributes": [
+        {
+          "key": "title",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "subtitle",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "imageId",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "loginImage",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "wholesaleImage",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "contactImage",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "policyImage",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        }
+      ]
+    }
+  },
+  "67076d3400357d0fb6dc": {
+    "collection": {
+      "$id": "67076d3400357d0fb6dc",
+      "name": "subscribers",
+      "$permissions": [
+        "create(\"any\")",
+        "read(\"any\")",
+        "update(\"any\")",
+        "create(\"team:671ca690003781eae833\")",
+        "read(\"team:671ca690003781eae833\")",
+        "update(\"team:671ca690003781eae833\")",
+        "delete(\"team:671ca690003781eae833\")"
+      ],
+      "documentSecurity": false,
+      "attributes": [
+        {
+          "key": "email",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        }
+      ]
+    }
+  },
+  "670936dd000a6d9822ec": {
+    "collection": {
+      "$id": "670936dd000a6d9822ec",
+      "name": "AboutUs",
+      "$permissions": [
+        "read(\"any\")",
+        "create(\"team:671ca690003781eae833\")",
+        "read(\"team:671ca690003781eae833\")",
+        "update(\"team:671ca690003781eae833\")",
+        "delete(\"team:671ca690003781eae833\")"
+      ],
+      "documentSecurity": false,
+      "attributes": [
+        {
+          "key": "title",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "description",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        }
+      ]
+    }
+  },
+  "670a273a00149b21df38": {
+    "collection": {
+      "$id": "670a273a00149b21df38",
+      "name": "ContactInfo",
+      "$permissions": [
+        "read(\"any\")",
+        "create(\"team:671ca690003781eae833\")",
+        "read(\"team:671ca690003781eae833\")",
+        "update(\"team:671ca690003781eae833\")",
+        "delete(\"team:671ca690003781eae833\")"
+      ],
+      "documentSecurity": false,
+      "attributes": [
+        {
+          "key": "address",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 1000,
+          "default": null
+        },
+        {
+          "key": "phone",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "email",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        }
+      ]
+    }
+  },
+
+  
+  "670a4c59001e6516e088": {
+    "collection": {
+      "$id": "670a4c59001e6516e088",
+      "name": "Orders",
+      "$permissions": [
+        "create(\"any\")",
+        "read(\"any\")",
+        "update(\"any\")",
+        "delete(\"any\")"
+      ],
+      "documentSecurity": false,
+      "attributes": [
+        {
+          "key": "userId",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "totalPrice",
+          "type": "double",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "min": -1.7976931348623157e+308,
+          "max": 1.7976931348623157e+308,
+          "default": null
+        },
+        {
+          "key": "orderStatus",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "paymentStatus",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "createdAt",
+          "type": "datetime",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "format": "",
+          "default": null
+        },
+        {
+          "key": "updatedAt",
+          "type": "datetime",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "format": "",
+          "default": null
+        },
+        {
+          "key": "phoneNumber",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "email",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "format": "email",
+          "size": 255,
+          "default": null
+        },
+        {
+          "key": "paymentMethod",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "elements": [
+            "cardPayment",
+            "directBankTransfer"
+          ],
+          "size": 255,
+          "format": "enum",
+          "default": null
+        },
+        {
+          "key": "deliveryInstructions",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "paymentIntentId",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "stripeOrderId",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "customerFirstName",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 49998,
+          "default": null
+        },
+        {
+          "key": "customerLastName",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "transactionId",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "deliveryAddressLine1",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "deliveryAddressLine2",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "deliveryCity",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "deliveryRegion",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "deliveryPostalCode",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "deliveryCountry",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "billingAddressLine1",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "billingAddressLine2",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "billingCity",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "billingRegion",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        }
+      ]
+    }
+  },
+  "670a4d9700228b9457e2": {
+    "collection": {
+      "$id": "670a4d9700228b9457e2",
+      "name": "OrderItems",
+      "$permissions": [
+        "create(\"any\")",
+        "read(\"any\")",
+        "update(\"any\")",
+        "delete(\"any\")"
+      ],
+      "documentSecurity": false,
+      "attributes": [
+        {
+          "key": "orderId",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "productId",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "productName",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "quantity",
+          "type": "integer",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "min": -9223372036854776000,
+          "max": 9223372036854776000,
+          "default": null
+        },
+        {
+          "key": "price",
+          "type": "double",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "min": -1.7976931348623157e+308,
+          "max": 1.7976931348623157e+308,
+          "default": null
+        },
+        {
+          "key": "subtotal",
+          "type": "double",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "min": -1.7976931348623157e+308,
+          "max": 1.7976931348623157e+308,
+          "default": null
+        },
+        {
+          "key": "description",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "discountPrice",
+          "type": "double",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "min": -1.7976931348623157e+308,
+          "max": 1.7976931348623157e+308,
+          "default": null
+        },
+        {
+          "key": "categoryId",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "images",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": true,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "tags",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": true,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "isOnSale",
+          "type": "boolean",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "default": null
+        },
+        {
+          "key": "isWholesaleProduct",
+          "type": "boolean",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "default": null
+        }
+      ]
+    }
+  },
+  "670a4eda0034f1dbe223": {
+    "collection": {
+      "$id": "670a4eda0034f1dbe223",
+      "name": "DeliveryMetadata",
+      "$permissions": [
+        "create(\"any\")",
+        "read(\"any\")",
+        "update(\"any\")",
+        "delete(\"any\")"
+      ],
+      "documentSecurity": false,
+      "attributes": [
+        {
+          "key": "phoneNumber",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "email",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "format": "email",
+          "default": null
+        },
+        {
+          "key": "paymentMethod",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "elements": [
+            "cashOnDelivery",
+            "cardPayment"
+          ],
+          "format": "enum",
+          "default": null
+        },
+        {
+          "key": "deliveryInstructions",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "customerFirstName",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "customerLastName",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "addressLine1",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "addressLine2",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "city",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "region",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "postalCode",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "country",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        }
+      ]
+    }
+  },
+  "6718510c0024ad734de4": {
+    "collection": {
+      "$id": "6718510c0024ad734de4",
+      "name": "ProductsNotification",
+      "$permissions": [
+        "create(\"any\")",
+        "read(\"any\")",
+        "update(\"any\")",
+        "delete(\"any\")"
+      ],
+      "documentSecurity": false,
+      "attributes": [
+        {
+          "key": "userId",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "productId",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "productName",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "requestStatus",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "elements": [
+            "pending",
+            "notified"
+          ],
+          "format": "enum",
+          "default": null
+        },
+        {
+          "key": "isRead",
+          "type": "boolean",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "default": null
+        },
+        {
+          "key": "createdAt",
+          "type": "datetime",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "format": "",
+          "default": null
+        },
+        {
+          "key": "notifiedAt",
+          "type": "datetime",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "format": "",
+          "default": null
+        }
+      ]
+    }
+  },
+  "671be6ef003db36ab64e": {
+    "collection": {
+      "$id": "671be6ef003db36ab64e",
+      "name": "banners",
+      "$permissions": [
+        "read(\"any\")",
+        "create(\"team:671ca690003781eae833\")",
+        "read(\"team:671ca690003781eae833\")",
+        "update(\"team:671ca690003781eae833\")",
+        "delete(\"team:671ca690003781eae833\")"
+      ],
+      "documentSecurity": false,
+      "attributes": [
+        {
+          "key": "title",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "subtitle",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "imageId",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        }
+      ]
+    }
+  },
+  "671fbd7c003582fe2d83": {
+    "collection": {
+      "$id": "671fbd7c003582fe2d83",
+      "name": "ShippingRates",
+      "$permissions": [
+        "read(\"any\")",
+        "create(\"team:671ca690003781eae833\")",
+        "read(\"team:671ca690003781eae833\")",
+        "update(\"team:671ca690003781eae833\")",
+        "delete(\"team:671ca690003781eae833\")"
+      ],
+      "documentSecurity": false,
+      "attributes": [
+        {
+          "key": "shippingRate",
+          "type": "double",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "min": -1.7976931348623157e+308,
+          "max": 1.7976931348623157e+308,
+          "default": null
+        },
+        {
+          "key": "updatedAt",
+          "type": "datetime",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "format": "",
+          "default": null
+        },
+        {
+          "key": "FreeDeliveryThreshold",
+          "type": "double",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "min": -1.7976931348623157e+308,
+          "max": 1.7976931348623157e+308,
+          "default": null
+        }
+      ]
+    }
+  },
+  "67209965001efa4d475a": {
+    "collection": {
+      "$id": "67209965001efa4d475a",
+      "name": "HeroSection",
+      "$permissions": [
+        "read(\"any\")",
+        "create(\"team:671ca690003781eae833\")",
+        "read(\"team:671ca690003781eae833\")",
+        "update(\"team:671ca690003781eae833\")",
+        "delete(\"team:671ca690003781eae833\")"
+      ],
+      "documentSecurity": false,
+      "attributes": [
+        {
+          "key": "title",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 1000,
+          "default": null
+        },
+        {
+          "key": "subtitle",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 1000,
+          "default": null
+        },
+        {
+          "key": "imageId",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        }
+      ]
+    }
+  },
+  "6722fe8200213131b4e5": {
+    "collection": {
+      "$id": "6722fe8200213131b4e5",
+      "name": "Vouchers",
+      "$permissions": [
+        "read(\"any\")",
+        "create(\"team:671ca690003781eae833\")",
+        "read(\"team:671ca690003781eae833\")",
+        "update(\"team:671ca690003781eae833\")",
+        "delete(\"team:671ca690003781eae833\")"
+      ],
+      "documentSecurity": false,
+      "attributes": [
+        {
+          "key": "code",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 50000,
+          "default": null
+        },
+        {
+          "key": "discountValue",
+          "type": "double",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "min": -1.7976931348623157e+308,
+          "max": 1.7976931348623157e+308,
+          "default": null
+        }
+      ]
+    }
+  },
+  "67231f0b00005e8a3d27": {
+    "collection": {
+      "$id": "67231f0b00005e8a3d27",
+      "name": "UserVouchers",
+      "$permissions": [
+        "create(\"any\")",
+        "read(\"any\")",
+        "update(\"any\")",
+        "delete(\"any\")"
+      ],
+      "documentSecurity": false,
+      "attributes": [
+        {
+          "key": "userId",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "voucherId",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        },
+        {
+          "key": "isUsed",
+          "type": "boolean",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "default": null
+        },
+        {
+          "key": "usedAt",
+          "type": "datetime",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "format": "",
+          "default": null
+        },
+        {
+          "key": "orderId",
+          "type": "string",
+          "status": "available",
+          "error": "",
+          "required": false,
+          "array": false,
+          "size": 500,
+          "default": null
+        }
+      ]
+    }
+  }
+}
